@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre Cerámica - Taller de Cerámica Artesanal</title>
+    
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS para un diseño rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /*
+         * Aquí puedes añadir estilos personalizados si lo necesitas.
+         * Por ahora, usamos Tailwind CSS para todo.
+         * Hemos configurado las fuentes directamente en el body.
+        */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FDFBF8; /* Un blanco roto muy cálido */
+            color: #034749; /* Un gris oscuro para el texto */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+            color: #034749;
+        }
+        .hero-bg {
+            background-image: url('images/mc1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ===== NAVEGACIÓN ===== -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-serif text-gray-800">Marchu Cerámica</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#galeria" class="text-gray-600 hover:text-gray-900 transition-colors">Catálogo</a>
+                <a href="#sobre-mi" class="text-gray-600 hover:text-gray-900 transition-colors">Nosotros</a>
+                <a href="#contacto" class="text-gray-600 hover:text-gray-900 transition-colors">Contacto</a>
+            </div>
+            <!-- Menú para móvil -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Menú desplegable para móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#galeria" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Catálogo</a>
+            <a href="#sobre-mi" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Nosotros</a>
+            <a href="#contacto" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== SECCIÓN HERO (PRINCIPAL) ===== -->
+        <section class="hero-bg h-[60vh] md:h-[80vh] flex items-center justify-center text-white">
+            <div class="text-center bg-black/40 p-8 rounded-lg">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">Historias Moldeadas en Arcilla</h1>
+                <p class="mt-4 text-lg md:text-xl font-light">Piezas únicas hechas a mano, con alma y dedicación.</p>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN GALERÍA ===== -->
+        <section id="galeria" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Galería de Trabajos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    
+                    <!-- Item 1 de la galería jarron ocre -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
+                        <img src="images/mc3.jpg" alt="Bizcocho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
+                            <h3 class="text-white text-2xl font-serif">Bizcocho</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 de la galería -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
+                        <img src="images/mc2.jpg" alt="[Imagen de Cuencos Verde Musgo]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
+                            <h3 class="text-white text-2xl font-serif">Cuencos Musgo</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 de la galería -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
+                        <img src="images/mc4.jpg" alt="[Imagen de Tazas de Café]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
+                            <h3 class="text-white text-2xl font-serif">Tazas de Café</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 de la galería -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
+                        <img src="images/mc5.jpg" alt="[Imagen de Plato Terracota]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
+                            <h3 class="text-white text-2xl font-serif">Plato Terracota</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 de la galería -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
+                        <img src="images/mc6.jpg" alt="[Imagen de Macetas Colgantes]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
+                            <h3 class="text-white text-2xl font-serif">Macetas Colgantes</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 de la galería -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
+                        <img src="images/mc7.jpg" alt="[Imagen de Set de Vajilla]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
+                            <h3 class="text-white text-2xl font-serif">Set de Vajilla</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN SOBRE MÍ ===== -->
+        <section id="sobre-mi" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="images/mc8.jpeg" alt="[Foto tuya en el taller]" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Mi Taller, Mi Refugio</h2>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            ¡Hola! Soy Marcela Pérez, la artesana detrás de cada pieza que ves aquí. La cerámica llegó a mi vida como una forma de meditación, una manera de conectar con la tierra y crear belleza con mis propias manos.
+                        </p>
+                        <p class="mb-6 leading-relaxed">
+                            Mi taller es un pequeño espacio en Tandil, donde el tiempo pasa más lento. Cada objeto nace sin prisa, respetando los tiempos de la arcilla, y lleva consigo una parte de mi historia y dedicación.
+                        </p>
+                        <a href="#contacto" class="inline-block bg-[#A88B79] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#8E7667] transition-colors">Hablemos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN CONTACTO ===== -->
+        <section id="contacto" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Te gustaría una pieza personalizada?</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">
+                    Estoy disponible para encargos especiales, colaboraciones o simplemente para charlar sobre cerámica. ¡No dudes en escribirme!
+                </p>
+                <a href="mailto:tuemail@example.com" class="inline-block bg-gray-800 text-white font-bold py-4 px-10 rounded-lg hover:bg-gray-900 transition-colors text-lg">
+                    Enviar un Email
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-[#EAE3D9] py-8">
+        <div class="container mx-auto px-6 text-center text-gray-700">
+            <p>&copy; <span id="year"></span> Marchu Cerámica. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Diseño web ATTECH Tandil</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Script para el año actual en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
