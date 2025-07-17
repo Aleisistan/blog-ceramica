@@ -19,10 +19,14 @@
          * Por ahora, usamos Tailwind CSS para todo.
          * Hemos configurado las fuentes directamente en el body.
         */
+        /* Añadimos un desplazamiento suave para los enlaces internos (anclas) */
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #FDFBF8; /* Un blanco roto muy cálido */
-            color: #034749; /* Un gris oscuro para el texto */
+            color: #034749; 
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Lora', serif;
@@ -78,18 +82,25 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     
                     <!-- Item 1 de la galería jarron ocre -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
+                    <a href="jarrones.html" class="group block relative overflow-hidden rounded-lg shadow-md gallery-item">
+                     <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
                         <img src="images/mc3.jpg" alt="Bizcocho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
-                            <h3 class="text-white text-2xl font-serif">Bizcocho</h3>
+                            <div class="text-center">
+                                <h3 class="text-white text-2xl font-serif">Bizcocho</h3>
+                                <p class="text-white text-sm mt-1 border-t border-white/50 pt-1">Ver modelos y precios</p>
+                            </div>
                         </div>
                     </div>
-                    
+                    </a>
                     <!-- Item 2 de la galería -->
                     <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
                         <img src="images/mc2.jpg" alt="[Imagen de Cuencos Verde Musgo]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
-                            <h3 class="text-white text-2xl font-serif">Cuencos Musgo</h3>
+                            <div class="text-center">
+                                <h3 class="text-white text-2xl font-serif">Cuencos Musgo</h3>
+                                <p class="text-white text-sm mt-1 border-t border-white/50 pt-1">Ver modelos y precios</p>
+                            </div>
                         </div>
                     </div>
 
@@ -97,7 +108,10 @@
                     <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
                         <img src="images/mc4.jpg" alt="[Imagen de Tazas de Café]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
-                            <h3 class="text-white text-2xl font-serif">Tazas de Café</h3>
+                            <div class="text-center">
+                                <h3 class="text-white text-2xl font-serif">Tazas de Café</h3>
+                                <p class="text-white text-sm mt-1 border-t border-white/50 pt-1">Ver modelos y precios</p>
+                            </div>
                         </div>
                     </div>
                     
@@ -105,7 +119,10 @@
                     <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
                         <img src="images/mc5.jpg" alt="[Imagen de Plato Terracota]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
-                            <h3 class="text-white text-2xl font-serif">Plato Terracota</h3>
+                            <div class="text-center">
+                                <h3 class="text-white text-2xl font-serif">Plato Terracota</h3>
+                                <p class="text-white text-sm mt-1 border-t border-white/50 pt-1">Ver modelos y precios</p>
+                            </div>
                         </div>
                     </div>
 
@@ -113,7 +130,10 @@
                     <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
                         <img src="images/mc6.jpg" alt="[Imagen de Macetas Colgantes]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
-                            <h3 class="text-white text-2xl font-serif">Macetas Colgantes</h3>
+                            <div class="text-center">
+                                <h3 class="text-white text-2xl font-serif">Macetas Colgantes</h3>
+                                <p class="text-white text-sm mt-1 border-t border-white/50 pt-1">Ver modelos y precios</p>
+                            </div>
                         </div>
                     </div>
 
@@ -121,7 +141,10 @@
                     <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
                         <img src="images/mc7.jpg" alt="[Imagen de Set de Vajilla]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
-                            <h3 class="text-white text-2xl font-serif">Set de Vajilla</h3>
+                            <div class="text-center">
+                                <h3 class="text-white text-2xl font-serif">Set de Vajilla</h3>
+                                <p class="text-white text-sm mt-1 border-t border-white/50 pt-1">Ver modelos y precios</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,15 +152,21 @@
         </section>
 
         <!-- ===== SECCIÓN SOBRE MÍ ===== -->
+        
         <section id="sobre-mi" class="py-16 md:py-24">
+            <a href="talleres-propios.html" class="group block relative overflow-hidden rounded-lg shadow-md gallery-item">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/2">
-                        <img src="images/mc10.png" class="rounded-lg shadow-xl w-full">
+                    <div class="group relative overflow-hidden rounded-lg shadow-md gallery-item">
+                        <img src="images/mc11.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 overlay">
+                            <div class="text-center">
+                                <h3 class="text-white text-2xl font-serif">Talleres Propios</h3>
+                                <p class="text-white text-sm mt-1 border-t border-white/50 pt-1">Formación Profesional</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="md:w-1/2">
-                        <img src="images/mc11.png" class="rounded-lg shadow-xl w-full">
-                    </div>
+                     </a>
                     <div class="md:w-1/2 text-center md:text-left">
                         <h2 class="text-3xl md:text-4xl font-bold mb-4">Mi Taller, Mi Refugio</h2>
                         <p class="text-lg mb-4 leading-relaxed">
@@ -150,6 +179,34 @@
                     </div>
                 </div>
             </div>
+           
+        </section>
+         <!-- ===== SECCIÓN SOBRE PEDIDOS ===== -->
+        <section id="sobre-mi" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="images/mc12.jpg" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="images/mc13.jpg" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="images/mc7.jpg" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Arma tu Pedido</h2>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            ELEGÍ tu transporte de confianza. Nosotros te lo embalamos apropiadamente.
+                        </p>
+                        <p class="mb-8 leading-relaxed">
+                        </p>
+                        <a href="https://www.andreani.com/" class="inline-block bg-[#A88B79] text-white font-bold py-2 px-3 rounded-lg hover:bg-[#8E7667] transition-colors">Andreani</a>
+                        <a href="https://www.viacargo.com.ar//" class="inline-block bg-[#A88B79] text-white font-bold py-2 px-3 rounded-lg hover:bg-[#8E7667] transition-colors">Via Cargo</a>
+                        <a href="https://mgpostal.com//" class="inline-block bg-[#A88B79] text-white font-bold py-2 px-3 rounded-lg hover:bg-[#8E7667] transition-colors">MG </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- ===== SECCIÓN CONTACTO ===== -->
@@ -157,10 +214,17 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Te gustaría una pieza personalizada?</h2>
                 <p class="text-lg mb-8 max-w-2xl mx-auto">
-                    Estoy disponible para encargos especiales, colaboraciones o simplemente para charlar sobre cerámica. ¡No dudes en escribirme!
+                    Estoy disponible para encargos especiales, colaboraciones o simplemente para charlar sobre cerámica. 
+                    ¡No dudes en escribirme!
                 </p>
-                <a href="mailto:tuemail@example.com" class="inline-block bg-gray-800 text-white font-bold py-4 px-10 rounded-lg hover:bg-gray-900 transition-colors text-lg">
+                <a href="mailto:carlosalejandrotoloza@gmail.com" class="inline-block bg-gray-800 text-white font-bold py-4 px-10 rounded-lg hover:bg-gray-900 transition-colors text-lg">
                     Enviar un Email
+                </a>
+                <a href="https://web.whatsapp.com/" class="inline-block bg-gray-800 text-white font-bold py-4 px-10 rounded-lg hover:bg-gray-900 transition-colors text-lg">
+                    2494 019741
+                </a>
+                <a href="https://web.whatsapp.com/" class="inline-block bg-gray-800 text-white font-bold py-4 px-10 rounded-lg hover:bg-gray-900 transition-colors text-lg">
+                   2494 207239
                 </a>
             </div>
         </section>

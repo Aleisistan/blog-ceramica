@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cambia el título para cada producto -->
+    <title>Jarrones - Tu Nombre Cerámica</title>
+    
+    <!-- Fuentes de Google Fonts (mismas que la página principal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FDFBF8;
+            color: #4A4A4A;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+            color: #3B3B3B;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ===== NAVEGACIÓN (es la misma que en index.html) ===== -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- El enlace del logo ahora vuelve a la página principal -->
+            <a href="index.html" class="text-2xl font-bold font-serif text-gray-800">Marchu Cerámica</a>
+            <div class="hidden md:flex space-x-8">
+                <!-- Los enlaces ahora apuntan a la página principal y a la sección correspondiente -->
+                <a href="index.html#galeria" class="text-gray-600 hover:text-gray-900 transition-colors">Catálogo</a>
+                <a href="index.html#sobre-mi" class="text-gray-600 hover:text-gray-900 transition-colors">Nosotros</a>
+                <a href="index.html#contacto" class="text-gray-600 hover:text-gray-900 transition-colors">Contacto</a>
+            </div>
+             <!-- Menú para móvil -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Menú desplegable para móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="index.html#galeria" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Catálogo</a>
+            <a href="index.html#sobre-mi" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Nosotros</a>
+            <a href="index.html#contacto" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contacto</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Enlace para volver -->
+        <div class="mb-8">
+            <a href="index.html#galeria" class="text-[#A88B79] hover:text-[#8E7667] transition-colors">&larr; Volver a la galería principal</a>
+        </div>
+
+        <!-- Título y descripción del producto -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold">Talleres Propios</h1>
+            <p class="mt-4 text-lg max-w-3xl mx-auto text-gray-600">
+                Formación profesional en realización de Arte.
+            </p>
+        </div>
+
+        <!-- Galería de modelos específicos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="images/mc20.png" alt="[Imagen de Jarrón Alto Blanco]" class="w-full h-full object-cover">
+                <div class="p-4 bg-white">
+                    <h3 class="font-bold text-lg">Jarrón Alto "Nube"</h3>
+                    <p class="text-sm text-gray-600">Esmalte blanco brillante.</p>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="images/mc21.png" alt="[Imagen de Jarrón Bajo y Ancho]" class="w-full h-full object-cover">
+                 <div class="p-4 bg-white">
+                    <h3 class="font-bold text-lg">Jarrón Bajo "Tierra"</h3>
+                    <p class="text-sm text-gray-600">Arcilla a la vista con textura.</p>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="images/mc22.png" alt="[Imagen de Jarrón con Asas]" class="w-full h-full object-cover">
+                 <div class="p-4 bg-white">
+                    <h3 class="font-bold text-lg">Jarrón "Ánfora"</h3>
+                    <p class="text-sm text-gray-600">Esmalte verde reactivo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Listado de Precios -->
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Modelos y Precios</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="p-4 font-semibold">Modelo</th>
+                            <th class="p-4 font-semibold">Dimensiones (aprox.)</th>
+                            <th class="p-4 font-semibold">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">Jarrón Alto "Nube"</td>
+                            <td class="p-4">30cm alto x 12cm diámetro</td>
+                            <td class="p-4 font-semibold text-gray-800">$ 5,500 ARS</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">Jarrón Bajo "Tierra"</td>
+                            <td class="p-4">18cm alto x 20cm diámetro</td>
+                            <td class="p-4 font-semibold text-gray-800">$ 6,200 ARS</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">Jarrón "Ánfora"</td>
+                            <td class="p-4">25cm alto x 15cm diámetro</td>
+                            <td class="p-4 font-semibold text-gray-800">$ 5,800 ARS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-sm mt-4 text-gray-600">Los precios son indicativos y pueden variar. Para encargos, no dudes en consultar.</p>
+        </div>
+
+        <!-- Botón de consulta -->
+        <div class="text-center mt-12">
+            <a href="mailto:tuemail@example.com?subject=Consulta sobre la Línea de Jarrones" class="inline-block bg-gray-800 text-white font-bold py-4 px-10 rounded-lg hover:bg-gray-900 transition-colors text-lg">
+                Consultar o Encargar
+            </a>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER (es el mismo que en index.html) ===== -->
+    <footer class="bg-[#EAE3D9] py-8 mt-16">
+        <div class="container mx-auto px-6 text-center text-gray-700">
+            <p>&copy; <span id="year"></span> Tu Nombre Cerámica. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Diseño web hecho con ❤️ en [Tu Ciudad]</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Script para el año actual en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
