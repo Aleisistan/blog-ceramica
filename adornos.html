@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cambia el título para cada producto -->
+    <title>Jarrones - Marchu Cerámica</title>
+    
+    <!-- Fuentes de Google Fonts (mismas que la página principal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FDFBF8;
+            color: #4A4A4A;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+            color: #3B3B3B;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ===== NAVEGACIÓN (es la misma que en index.html) ===== -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- El enlace del logo ahora vuelve a la página principal -->
+            <a href="index.html" class="text-2xl font-bold font-serif text-gray-800">Marchu Cerámica</a>
+            <div class="hidden md:flex space-x-8">
+                <!-- Los enlaces ahora apuntan a la página principal y a la sección correspondiente -->
+                <a href="index.html#galeria" class="text-gray-600 hover:text-gray-900 transition-colors">Catálogo</a>
+                <a href="index.html#sobre-mi" class="text-gray-600 hover:text-gray-900 transition-colors">Nosotros</a>
+                <a href="index.html#contacto" class="text-gray-600 hover:text-gray-900 transition-colors">Contacto</a>
+            </div>
+             <!-- Menú para móvil -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Menú desplegable para móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="index.html#galeria" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Catálogo</a>
+            <a href="index.html#sobre-mi" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Nosotros</a>
+            <a href="index.html#contacto" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contacto</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Enlace para volver -->
+        <div class="mb-8">
+            <a href="index.html#galeria" class="text-[#A88B79] hover:text-[#8E7667] transition-colors">&larr; Volver a la galería principal</a>
+        </div>
+
+        <!-- Título y descripción del producto -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold">Línea de Adornos y Otros</h1>
+            <p class="mt-4 text-lg max-w-3xl mx-auto text-gray-600">
+                La cerámica, uno de los materiales más antiguos usados por el ser humano, sigue vigente como una expresión artística y funcional. En el ámbito decorativo, los adornos cerámicos destacan por su delicadeza, autenticidad y versatilidad estética. Estas piezas aportan un valor único a los espacios gracias a su elaboración artesanal y a la riqueza de sus acabados.
+            </p>
+        </div>
+
+        <!-- Galería de modelos específicos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
+            <div class="rounded-lg">
+                <!-- Item 1 de la galería jarron ocre -->
+                
+                    <div class="group relative rounded-lg shadow-md gallery-item">
+                        <img src="images/adornos1.jpg" alt="Bizcocho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-0 transition-opacity duration-300 overlay">
+                    <div class="text-center">
+                    </div>
+                        </div>
+                        </div>
+                    
+            </div>
+            <div class="rounded-lg">
+                <!-- Item 1 de la galería jarron ocre -->
+                
+                    <div class="group relative rounded-lg shadow-md gallery-item">
+                        <img src="images/adornos2.jpg" alt="Bizcocho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-0 transition-opacity duration-300 overlay">
+                    <div class="text-center">
+                    </div>
+                        </div>
+                        </div>
+                    
+            </div>
+            <div class="rounded-lg">
+                <!-- Item 1 de la galería jarron ocre -->
+                
+                    <div class="group relative rounded-lg shadow-md gallery-item">
+                        <img src="images/adornos3.jpg" alt="Bizcocho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-0 transition-opacity duration-300 overlay">
+                    <div class="text-center">
+                    </div>
+                        </div>
+                        </div>
+                    
+            </div>
+            <div class="rounded-lg">
+                <!-- Item 1 de la galería jarron ocre -->
+                
+                    <div class="group relative rounded-lg shadow-md gallery-item">
+                        <img src="images/adornos4.jpg" alt="Bizcocho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-0 transition-opacity duration-300 overlay">
+                    <div class="text-center">
+                    </div>
+                        </div>
+                        </div>
+                    
+            </div>
+            <div class="rounded-lg">
+                <!-- Item 1 de la galería jarron ocre -->
+                
+                    <div class="group relative rounded-lg shadow-md gallery-item">
+                        <img src="images/adornos5.jpg" alt="Bizcocho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-0 transition-opacity duration-300 overlay">
+                    <div class="text-center">
+                    </div>
+                        </div>
+                        </div>
+                    
+            </div>
+            
+            <div class="rounded-lg">
+                <!-- Item 1 de la galería jarron ocre -->
+                
+                    <div class="group relative rounded-lg shadow-md gallery-item">
+                        <img src="images/adornos6.jpg" alt="Bizcocho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-0 transition-opacity duration-300 overlay">
+                    <div class="text-center">
+                    </div>
+                        </div>
+                        </div>
+                    
+            </div>
+            
+            
+           
+        </div>
+
+        <!-- Listado de Precios -->
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Modelos y Precios</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="p-4 font-semibold">Modelo</th>
+                            <th class="p-4 font-semibold">Dimensiones (aprox.)</th>
+                            <th class="p-4 font-semibold">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">Jarrón Alto "Nube"</td>
+                            <td class="p-4">30cm alto x 12cm diámetro</td>
+                            <td class="p-4 font-semibold text-gray-800">$ ARS</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">Jarrón Bajo "Tierra"</td>
+                            <td class="p-4">18cm alto x 20cm diámetro</td>
+                            <td class="p-4 font-semibold text-gray-800">$ ARS</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">Jarrón "Ánfora"</td>
+                            <td class="p-4">25cm alto x 15cm diámetro</td>
+                            <td class="p-4 font-semibold text-gray-800">$ ARS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-sm mt-4 text-gray-600">Imágenes sólo ilustrativas. Los precios son indicativos y pueden variar. Para encargos, no dudes en consultar.</p>
+        </div>
+
+        <!-- Botón de consulta -->
+        <div class="text-center mt-12">
+             <a href="https://wa.me/5492494019741?text=Hola!%20Vi%20tu%20blog%20de%20cerámica%20y%20quisiera%20hacer%20una%20consulta." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center justify-center bg-[#25D366] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#1DA851] transition-colors text-lg shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.357 1.846 6.067l-1.29 4.723 4.833-1.276zM9.356 8.014c-.099-.148-.247-.248-.41-.252-.162-.005-.324.02-.468.092s-.273.18-.37.316c-.097.136-.148.294-.148.463.001.169.052.336.149.481.097.145.229.28.391.43.163.149.349.301.55.459.201.158.415.319.64.483.225.164.455.32.68.466.224.146.437.28.638.398.2.118.387.221.562.31.174.089.338.161.494.218.156.057.306.095.449.118.143.022.282.028.412.016.13-.012.254-.045.368-.098.114-.053.216-.124.302-.21.086-.086.155-.188.204-.3.049-.112.077-.23.082-.35.005-.12-.012-.239-.051-.351-.04-.112-.1-.217-.176-.312s-.168-.18-.27-.252c-.102-.072-.21-.129-.32-.169-.11-.04-.22-.065-.326-.075-.106-.01-.21.003-.306.038s-.185.09-.262.163c-.077.072-.14.16-.188.256-.048.096-.08.2-.094.304-.014.104-.004.211.029.312.033.101.084.197.152.282.068.085.151.155.246.208.095.053.2.09.304.108.104.018.212.018.318-.002.106-.02.213-.057.318-.11.104-.053.206-.121.302-.202.096-.081.185-.175.262-.278.077-.103.14-.217.188-.336.048-.119.078-.243.086-.371s.004-.256-.02-.38c-.024-.124-.068-.244-.132-.356-.064-.112-.148-.212-.248-.298s-.214-.158-.336-.212c-.122-.054-.252-.09-.384-.108s-.266-.014-.392.012c-.126.026-.244.073-.352.138s-.204.145-.282.234c-.078.089-.142.188-.188.29s-.076.21-.086.32c-.01.11-.004.22.018.326s.06.201.112.288s.118.145.194.194c.076.049.16.084.246.104s.176.024.262.012c.086-.012.17-.04.248-.082s.15-.098.214-.164c.064-.066.12-.14.168-.22.048-.08.082-.168.102-.26.02-.092.024-.188.014-.282s-.036-.188-.076-.276c-.04-.088-.094-.17-.16-.246-.066-.076-.144-.14-.23-.19s-.18-.086-.274-.108c-.094-.022-.19-.028-.282-.018s-.18.036-.26.072c-.08.036-.154.086-.22.148-.066.062-.124.134-.172.212s-.084.166-.108.258c-.024.092-.034.188-.028.282s.026.188.068.272c.042.084.1.16.172.228.072.068.154.124.242.168.088.044.182.074.28.088.098.014.198.012.294-.006.096-.018.19-.05.278-.094.088-.044.17-.1.244-.168.074-.068.14-.148.194-.236.054-.088.094-.186.12-.288.026-.102.036-.208.032-.314s-.02-.208-.054-.302c-.034-.094-.08-.182-.138-.262s-.128-.148-.206-.202c-.078-.054-.164-.094-.256-.12s-.188-.036-.28-.028c-.092.008-.18.034-.262.074s-.152.09-.214.152c-.062.062-.114.132-.152.21s-.064.162-.076.248c-.012.086-.012.174-.002.26s.034.17.072.246c.038.076.088.144.152.202s.138.104.216.136c.078.032.16.05.244.054.084.004.168-.006.25-.03.082-.024.16-.062.23-.112s.134-.11.19-.178c.056-.068.1-.144.132-.226s.05-.17.054-.26c.004-.09-.006-.18-.03-.266s-.06-.168-.104-.148z"/></svg>
+                    Consultas o Encargues
+                </a>
+                <a href="https://wa.me/5492494207239?text=Hola!%20Vi%20tu%20blog%20de%20cerámica%20y%20quisiera%20hacer%20una%20consulta." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center justify-center bg-[#25D366] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#1DA851] transition-colors text-lg shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.357 1.846 6.067l-1.29 4.723 4.833-1.276zM9.356 8.014c-.099-.148-.247-.248-.41-.252-.162-.005-.324.02-.468.092s-.273.18-.37.316c-.097.136-.148.294-.148.463.001.169.052.336.149.481.097.145.229.28.391.43.163.149.349.301.55.459.201.158.415.319.64.483.225.164.455.32.68.466.224.146.437.28.638.398.2.118.387.221.562.31.174.089.338.161.494.218.156.057.306.095.449.118.143.022.282.028.412.016.13-.012.254-.045.368-.098.114-.053.216-.124.302-.21.086-.086.155-.188.204-.3.049-.112.077-.23.082-.35.005-.12-.012-.239-.051-.351-.04-.112-.1-.217-.176-.312s-.168-.18-.27-.252c-.102-.072-.21-.129-.32-.169-.11-.04-.22-.065-.326-.075-.106-.01-.21.003-.306.038s-.185.09-.262.163c-.077.072-.14.16-.188.256-.048.096-.08.2-.094.304-.014.104-.004.211.029.312.033.101.084.197.152.282.068.085.151.155.246.208.095.053.2.09.304.108.104.018.212.018.318-.002.106-.02.213-.057.318-.11.104-.053.206-.121.302-.202.096-.081.185-.175.262-.278.077-.103.14-.217.188-.336.048-.119.078-.243.086-.371s.004-.256-.02-.38c-.024-.124-.068-.244-.132-.356-.064-.112-.148-.212-.248-.298s-.214-.158-.336-.212c-.122-.054-.252-.09-.384-.108s-.266-.014-.392.012c-.126.026-.244.073-.352.138s-.204.145-.282.234c-.078.089-.142.188-.188.29s-.076.21-.086.32c-.01.11-.004.22.018.326s.06.201.112.288s.118.145.194.194c.076.049.16.084.246.104s.176.024.262.012c.086-.012.17-.04.248-.082s.15-.098.214-.164c.064-.066.12-.14.168-.22.048-.08.082-.168.102-.26.02-.092.024-.188.014-.282s-.036-.188-.076-.276c-.04-.088-.094-.17-.16-.246-.066-.076-.144-.14-.23-.19s-.18-.086-.274-.108c-.094-.022-.19-.028-.282-.018s-.18.036-.26.072c-.08.036-.154.086-.22.148-.066.062-.124.134-.172.212s-.084.166-.108.258c-.024.092-.034.188-.028.282s.026.188.068.272c.042.084.1.16.172.228.072.068.154.124.242.168.088.044.182.074.28.088.098.014.198.012.294-.006.096-.018.19-.05.278-.094.088-.044.17-.1.244-.168.074-.068.14-.148.194-.236.054-.088.094-.186.12-.288.026-.102.036-.208.032-.314s-.02-.208-.054-.302c-.034-.094-.08-.182-.138-.262s-.128-.148-.206-.202c-.078-.054-.164-.094-.256-.12s-.188-.036-.28-.028c-.092.008-.18.034-.262.074s-.152.09-.214.152c-.062.062-.114.132-.152.21s-.064.162-.076.248c-.012.086-.012.174-.002.26s.034.17.072.246c.038.076.088.144.152.202s.138.104.216.136c.078.032.16.05.244.054.084.004.168-.006.25-.03.082-.024.16-.062.23-.112s.134-.11.19-.178c.056-.068.1-.144.132-.226s.05-.17.054-.26c.004-.09-.006-.18-.03-.266s-.06-.168-.104-.148z"/></svg>
+                    Consultas o Encargues
+                </a>
+        </div>
+
+    </main>
+
+   <!-- ===== FOOTER (con logo) ===== -->
+<footer class="bg-[#EAE3D9] py-8">
+    <div class="container mx-auto px-6 text-center text-gray-700">
+        
+        <!-- Párrafos de texto -->
+        <p>&copy; <span id="year"></span> Marchu Cerámica. Todos los derechos reservados.</p>
+         <div class="flex justify-center mt-2">
+            <img src="images/logoMarchu.jpg" alt="Logo de Marchu Cerámica" class="h-16 w-auto rounded-lg">
+        </div>
+
+        <p class="text-sm mt-2">Diseño web ATTECH Tandil</p>
+        
+        <!-- Logo centrado -->
+       
+    </div>
+</footer>
+
+    <script>
+        // Script para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Script para el año actual en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
